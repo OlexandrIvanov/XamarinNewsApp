@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Test1"
+             x:Name="_contentPage"
+             x:Class="Test1.MainPage">
+
+    <StackLayout x:Name="stackLayout" Spacing="10">
+
+        <Label
+            Text="Enter Login:"
+            Margin="20,20,0,0"
+            />
+
+        <Entry
+            x:Name="_entryLogin"
+            VerticalOptions="Fill"
+            TextColor="Chocolate"
+            Margin="20,0,20,0"
+            Placeholder="Login"
+            Keyboard="Email"
+            
+
+            />
+        <Label
+            Text="Enter Password:"
+            Margin="20,20,0,0"
+            />
+        <Entry
+            x:Name="_entryPassword"
+            VerticalOptions="Fill"
+            TextColor="Chocolate"
+            Margin="20,0,20,0"
+            IsPassword="True"
+            Placeholder="Password"
+            
+            />
+
+        <Button 
+            x:Name="_buttonLogin"
+            Text="Login"
+            TextColor="Blue"        
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Clicked="OnButtonClicked"
+            />
+
+        <ProgressBar
+            x:Name="_progressBar"
+            Margin="20,0,20,0"
+            IsVisible="False"
+            />
+
+    </StackLayout>
+
+</ContentPage>

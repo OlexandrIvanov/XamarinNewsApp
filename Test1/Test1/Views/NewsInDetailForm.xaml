@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginApp.Views.NewsInDetailForm">
+    <ContentPage.Content>
+        <StackLayout Margin="10,10,10,10">
+            <Label Text="{Binding Title}" FontSize="16"  Margin="10,0,10,0" TextColor="Red" HorizontalOptions="CenterAndExpand" />
+            <Image Source="{Binding UrlToImage}" HorizontalOptions="Center"/>
+            <Label Text="{Binding Description}" FontSize="15" HorizontalOptions="Center" />
+            <Label Text="{Binding PublishedAt}"  HorizontalOptions="End" TextColor="Black" FontSize="13" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
